@@ -34,11 +34,15 @@ public class Homework1 {
         Thread.sleep(3000);
         String bestSellURL = "https://www.amazon.com/gp/bestsellers/?ref_=nav_cs_bestsellers";
 
-        String title = chromeDriver.getTitle();
-        System.out.println(title);
-        System.out.println(chromeDriver.getCurrentUrl());
-        System.out.println("***Navigated to Best Sellers***\n");
-
+        WebElement element = chromeDriver.findElement(By.xpath("//*[@id=\"zg_banner_text_wrapper\"][text()='Amazon Best Sellers']"));
+        if (element.isDisplayed()) {
+            String title = chromeDriver.getTitle();
+            System.out.println(title);
+            System.out.println(chromeDriver.getCurrentUrl());
+            System.out.println("***Navigated to Best Sellers***\n");
+        } else {
+            System.out.println("!!!COULDN'T NAVIGATE TO BEST SELLERS - CHECK CODE!!!");
+        }
     }
 
     public static void navToCustSvc() throws Exception
@@ -47,10 +51,15 @@ public class Homework1 {
         Thread.sleep(3000);
         String custSvcURL = "https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice";
 
-        String title = chromeDriver.getTitle();
-        System.out.println(title);
-        System.out.println(chromeDriver.getCurrentUrl());
-        System.out.println("***Navigated to Customer Service***\n");
+        WebElement element = chromeDriver.findElement(By.xpath("//*[@alt=\"Returns & Refunds\"]"));
+        if (element.isDisplayed()) {
+            String title = chromeDriver.getTitle();
+            System.out.println(title);
+            System.out.println(chromeDriver.getCurrentUrl());
+            System.out.println("***Navigated to Customer Service***\n");
+        } else {
+            System.out.println("!!!COULDN'T NAVIGATE TO CUSTOMER SERVICE - CHECK CODE!!!");
+        }
     }
 
     public static void navToNewReleases() throws Exception
@@ -59,10 +68,15 @@ public class Homework1 {
         Thread.sleep(3000);
         String newReleasesURL = "https://www.amazon.com/gp/new-releases/?ref_=nav_cs_newreleases";
 
-        String title = chromeDriver.getTitle();
-        System.out.println(title);
-        System.out.println(chromeDriver.getCurrentUrl());
-        System.out.println("***Navigated to New Releases***\n");
+        WebElement element = chromeDriver.findElement(By.xpath("//*[@id=\"zg_banner_text_wrapper\"][text()='Amazon Hot New Releases']"));
+        if (element.isDisplayed()) {
+            String title = chromeDriver.getTitle();
+            System.out.println(title);
+            System.out.println(chromeDriver.getCurrentUrl());
+            System.out.println("***Navigated to New Releases***\n");
+        } else {
+            System.out.println("!!!COULDN'T NAVIGATE TO NEW RELEASES - CHECK CODE!!!");
+        }
     }
 
     public static void navToFindGift() throws Exception
@@ -71,10 +85,15 @@ public class Homework1 {
         Thread.sleep(3000);
         String findGiftURL = "https://www.amazon.com/gcx/Gifts-for-Everyone/gfhz/?ref_=nav_cs_giftfinder";
 
-        String title = chromeDriver.getTitle();
-        System.out.println(title);
-        System.out.println(chromeDriver.getCurrentUrl());
-        System.out.println("***Navigated to Find A Gift***\n");
+        WebElement element = chromeDriver.findElement(By.xpath("//*[@class=\"sc-jzJRlG irnHQq\"][text()='Who are you shopping for?']"));
+        if (element.isDisplayed()) {
+            String title = chromeDriver.getTitle();
+            System.out.println(title);
+            System.out.println(chromeDriver.getCurrentUrl());
+            System.out.println("***Navigated to Find A Gift***\n");
+        } else {
+            System.out.println("!!!COULDN'T NAVIGATE TO FIND A GIFT - CHECK CODE!!!");
+        }
     }
 
     public static void navToWholeFoods() throws Exception
@@ -82,6 +101,7 @@ public class Homework1 {
         chromeDriver.findElement(By.xpath("//*[@href=\"/alm/storefront?almBrandId=VUZHIFdob2xlIEZvb2Rz&ref_=nav_cs_whole_foods_in_region\"]")).click();
         Thread.sleep(3000);
 
+        WebElement element = chromeDriver.findElement(By.xpath(""));
         String title=chromeDriver.getTitle();
         System.out.println(title);
         System.out.println(chromeDriver.getCurrentUrl());
@@ -515,9 +535,10 @@ public class Homework1 {
         // Test Case 20
         hamburgerAccount();
 
-
+        // Close driver
         chromeDriver.close();
 
+        // OPTIONAL: End all driver tasks on local machine
 //        Runtime.getRuntime().exec("taskkill /F /M chromedriver.exe /T");
     }
 }
