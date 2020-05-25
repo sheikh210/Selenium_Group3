@@ -1,0 +1,64 @@
+Amazon HomePage
+- Header
+    1. Navigate to "Best Sellers"**
+    2. Navigate to "Customer Service"**
+    3. Navigate to "New Releases"**
+    4. Navigate to "Find a Gift"**
+    5. Navigate to "Whole Foods"**
+    6. Navigate to "Today's Deals"**
+    7. Navigate to "Registry"**
+    8. Navigate to "Amazon Basics"**
+    9. Navigate to "Coupons"**
+    10. Navigate to "#FoundItOnAmazon"**
+
+- Hamburger Menu Options
+    11. Navigate to Prime Video -> Prime Video**
+    12. Navigate to Amazon Music -> Amazon Music Unlimited**
+    13. Navigate to Echo & Alexa -> Echo Flex**
+    14. Navigate to Fire Tablets -> Fire HD 10**
+    15. Navigate to Fire TV -> Fire TV Stick 4K**
+    16. Navigate to Kindle E-readers & Books -> Free Kindle Reading Apps**
+    17. Navigate to App Store for Android -> All Apps & Games**
+    18. Navigate to Subscribe & Save**
+    19. Navigate to Full Store Directory**
+    20. Navigate to Your Account**
+
+
+- Footer
+    21. Navigate to "Careers"
+    22. Navigate to "Blog"
+    23. Navigate to "About Amazon"
+    24. Navigate to "Sell on Amazon"
+    25. Navigate to "Sell Under Amazon Accelerator"
+    26. Navigate to "Sell Your Services on Amazon"
+    27. Navigate to "Sell on Amazon Business"
+    28. Navigate to "Amazon Rewards Visa Signature Cards"
+    29. Navigate to "Amazon Business Card"
+    30. Navigate to "Amazon.com Corporate Credit Line"
+    31. Navigate to "Shop with Points"
+    32. Navigate to "Shipping Rates & Policies"
+    33. Navigate to "Amazon Prime"
+    34. Navigate to "Amazon Assistant"
+    35. Navigate to "Help"
+
+- Item Listing
+    36. Category menu within search bar
+    37. Search for item using keyword ("Echo")
+    38. Choose item-specific options on listing page
+    39. Update quantity from item listing page
+    40. View shipping "Details" pop-up
+    41. Navigate to reviews using "See All Customer Reviews"
+    42. Navigate to reviews using ratings counter
+    43. Navigate to product questions using questions counter
+    44. Navigate item pictures
+    45. Add item to list
+
+- Shopping Cart
+    46. Add item to shopping cart
+    47. Update quantity in shopping cart
+    48. Save item for later
+    49. Navigate back to item listing page from shopping cart
+    50H. Delete item from shopping cart
+
+
+
